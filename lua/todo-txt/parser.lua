@@ -22,7 +22,7 @@ end
 
 -- Extract the human-friendly tracked time from the line
 function M.extract_tracked_time(line)
-  return line:match("tracked:%d+h%d+m%d+s")
+  return line:match("tracked:%d+%a%d+%a%d+%a")
 end
 
 -- Extract creation date (first YYYY-MM-DD after optional priority/complete markers)
